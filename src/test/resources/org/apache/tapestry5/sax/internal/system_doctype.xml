@@ -1,0 +1,2 @@
+<!DOCTYPE foo SYSTEM "src/test/resources/org/apache/tapestry5/sax/internal/simple.dtd" >
+<foo>bar</foo>
