@@ -30,7 +30,8 @@ public class InternalBaseTestCase extends TapestryTestCase implements Registry
      */
     public static final String MODULE_BASE_DIR_PATH = System.getProperty("basedir", CURRENT_DIR_PATH);
 
-    private Registry registry;
+    // TODO check why this has to be static
+    private static Registry registry;
 
     @BeforeSuite
     public final void setup_registry()
