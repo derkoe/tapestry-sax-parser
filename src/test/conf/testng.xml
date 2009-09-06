@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- The suite may no longer be run in parallel, because of some tricky issues related to locking of class loaders. Running in parallel causes thread deadlocks, when unmanaged
+tests run at the same time as Selenium-based integration tests.  See TAPESTRY-2561. -->
+<suite name="Tapestry SAX Parser" annotations="1.5">
+    <test name="Internal APIs">
+        <packages>
+            <package name="org.apache.tapestry5.sax.internal"/>
+        </packages>
+    </test>
+</suite>
